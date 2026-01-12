@@ -89,7 +89,7 @@ export default function FeaturedProjects() {
                     <h3 className="text-lg font-semibold leading-6 text-white">
                       {project.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-6 text-gray-300">
+                    <p className="mt-2 text-sm leading-6 text-gray-300 whitespace-pre-line">
                       {project.description}
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2">
