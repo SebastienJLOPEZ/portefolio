@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Luméa",
     "description": "Dashboard énergétique pour surveiller sa consommation d'énergie.\nEmail de présentation : julien@mail.com.\nMot de passe : motdepasse",
-    "image": "/images/project-3.jpg",
+    "image": "/images/lumea.webp",
     "technologies": ["NextJS", "Node.js", "MongoDB", "TypeScript"],
     "github": "https://github.com/Nathaniel-Josse/compet_ls",
     "demo": "https://lumea-tz4v.onrender.com/"
