@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight, Download } from 'lucide-react'
+import { getAssetPath } from '@/lib/config'
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 animate-slide-up">
             <a
-              href="/CV_Sébastien_LOPEZ.pdf"
+              href={getAssetPath('/CV_Sébastien_LOPEZ.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary transition-colors flex items-center gap-2"

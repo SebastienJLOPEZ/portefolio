@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react'
 import projectsData from '@/data/projects.json'
+import { getAssetPath } from '@/lib/config'
 
 interface Project {
   id: number
@@ -78,7 +79,7 @@ export default function FeaturedProjects() {
                     className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-all duration-500"
                   >
                     <img
-                      src={project.image}
+                      src={getAssetPath(project.image)}
                       alt={project.title}
                       className="absolute inset-0 -z-10 h-full w-full object-cover"
                     />
