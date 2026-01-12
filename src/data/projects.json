@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Info-Focus",
+    "description": "Landing-page pour communiquer contre la désinformation. Concours organisé par l'ARCOM.",
+    "image": "/images/info-focus.png",
+    "technologies": ["HTML", "Tailwind CSS", "JavaScript"],
+    "github": "https://github.com/SebastienJLOPEZ/Info-focus",
+    "demo": "https://info-focus.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "EventEase",
+    "description": "PWA spécialisé dans l'évènementiel. Accès créateurs et participants.",
+    "image": "/images/EventEase.png",
+    "technologies": ["NextJS", "Node.js", "MongoDB", "TypeScript"],
+    "github": "https://github.com/Pakoski/Fil-Rouge",
+    "demo": "https://fil-rouge-r4kt.onrender.com/"
+  },
+  {
+    "id": 3,
+    "title": "Luméa",
+    "description": "Dashboard énergétique pour surveiller sa consommation d'énergie.",
+    "image": "/images/project-3.jpg",
+    "technologies": ["NextJS", "Node.js", "MongoDB", "TypeScript"],
+    "github": "https://github.com/Nathaniel-Josse/compet_ls",
+    "demo": "https://lumea-tz4v.onrender.com/"
+  }
+]
