@@ -13,7 +13,7 @@ const skills = [
   },
   {
     name: 'Langages',
-    description: 'html,css,js,py,php,rust',
+    description: 'html,css,js,py,php',
     icon: Globe,
   },  
 ]

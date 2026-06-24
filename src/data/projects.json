@@ -25,6 +25,7 @@
     "technologies": ["NextJS", "Node.js", "MongoDB", "TypeScript"],
     "github": "https://github.com/Nathaniel-Josse/compet_ls",
     "demo": "https://lumea-tz4v.onrender.com/"
+<<<<<<< HEAD
   },
   {
     "id": 4,
@@ -34,5 +35,7 @@
     "technologies":["HTML", "CSS", "Rust"],
     "github":"https://github.com/SebastienJLOPEZ/Solimouv",
     "demo":"https://solimouv-slwa.onrender.com/"
+=======
+>>>>>>> parent of 1c718a1 (Added latest validated project)
   }
 ]
