@@ -30,7 +30,7 @@
     "id": 4,
     "title":"Solimouv",
     "description":"Application web promouvant un festival sportif inclusif. Réalisé dans le cadre d'un projet no-code.",
-    "image":"/images/solimouv.png",
+    "image":"/images/Solimouv.png",
     "technologies":["HTML", "CSS", "Rust"],
     "github":"https://github.com/SebastienJLOPEZ/Solimouv",
     "demo":"https://solimouv-slwa.onrender.com/"
