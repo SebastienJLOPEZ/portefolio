@@ -18,7 +18,18 @@ interface Project {
 export default function FeaturedProjects() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [projects] = useState<Project[]>(projectsData.sort((a, b) => b.id - a.id))
-  const itemsPerPage = 3
+  const [itemsPerPage, setItemsPerPage] = useState(3)
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)')
+    const update = () => {
+      setItemsPerPage(mq.matches ? 3 : 1)
+      setCurrentIndex(0)
+    }
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
 
   const maxIndex = Math.max(0, projects.length - itemsPerPage)
 
@@ -33,7 +44,7 @@ export default function FeaturedProjects() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1))
-    }, 5000)
+    }, 10000)
     return () => clearInterval(interval)
   }, [maxIndex])
 
@@ -72,11 +83,11 @@ export default function FeaturedProjects() {
           {/* Carrousel */}
           <div className="overflow-hidden">
             <div className="mx-auto max-w-2xl lg:max-w-none">
-              <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              <div className="                            grid grid-cols-1 gap-8 lg:grid-cols-3">
                 {visibleProjects.map((project) => (
                   <div
                     key={project.id}
-                    className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-all duration-500"
+                                  className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-all duration-500"
                   >
                     <img
                       src={getAssetPath(project.image)}
